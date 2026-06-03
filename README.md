@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # API Banco Digital — db.tec.br
 
 API REST simplificada para um banco digital: gestão de contas, transferência de valores entre contas, consulta de movimentações financeiras e notificações pós-transferência.
@@ -300,3 +301,6 @@ Publicado no git
 ## Licença
 
 Projeto desenvolvido para o desafio técnico Java — DB Tecnologia (db.tec.br).
+=======
+# db
+>>>>>>> f0fbe7d6f4b4961903a91afd6b05c28920c351b4
