@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # API Banco Digital — db.tec.br
 
 API REST simplificada para um banco digital: gestão de contas, transferência de valores entre contas, consulta de movimentações financeiras e notificações pós-transferência.
