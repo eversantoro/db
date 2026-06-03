@@ -1,0 +1,21 @@
+# PostgreSQL para a API do banco digital (db.tec.br)
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: db-banco-postgres
+    environment:
+      POSTGRES_DB: banco_digital
+      POSTGRES_USER: db_user
+      POSTGRES_PASSWORD: db_secret
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U db_user -d banco_digital"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  db_postgres_data:
